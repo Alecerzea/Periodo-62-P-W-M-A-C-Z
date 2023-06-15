@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template: 200px 1fr 200px / 325px 1fr 325px;
+    grid-template-areas: "left header header" "left content right" "footer footer right";
+    grid-gap: 5px;
+    height: 100vh;
+}
+
+.item {
+    background-color: dodgerblue;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.header {
+    grid-area: header;
+    background-color: orangered;
+}
+
+.left {
+    grid-area: left;
+    background-color: gray;
+}
+
+.right {
+    grid-area: right;
+    background-color: black;
+}
+
+.content {
+    grid-area: content;
+    background-color: green;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: yellow;
+}
