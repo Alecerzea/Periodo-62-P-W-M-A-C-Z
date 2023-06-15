@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.item {
+    border: 1px dotted blue;
+    padding: 10px;
+    margin: 10px;
+}
