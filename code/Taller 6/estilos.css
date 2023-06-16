@@ -10,23 +10,33 @@
     height: 100vh;
 }
 
-.item {
+.item1 {
     border: 1px dotted blue;
     padding: 10px;
-    margin: 10px;     
+    margin: 10px;
+    height: 200px;
 }
-.item1 {
-    height: 300px;     
-}
-.item2 {
-    height: 300px;     
+.item2  {
+    border: 1px dotted blue;
+    padding: 10px;
+    margin: 10px;
+    height: 300px;
 }
 .item3 {
-    height: 300px;     
+    border: 1px dotted blue;
+    padding: 10px;
+    margin: 10px;
+    height: 250px;
 }
 .item4 {
-    height: 300px;     
+    border: 1px dotted blue;
+    padding: 10px;
+    margin: 10px;
+    height: 150px;
 }
 .item5 {
-    height: 300px;     
+    border: 1px dotted blue;
+    padding: 10px;
+    margin: 10px;
+    height: 350px;
 }
