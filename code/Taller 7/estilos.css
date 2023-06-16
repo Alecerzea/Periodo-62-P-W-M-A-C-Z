@@ -61,6 +61,8 @@ a:active.menu{
     display: block;
     float: left;
     width: 200px;
+    text-align: right;
+    
 }
 
 .footer {
