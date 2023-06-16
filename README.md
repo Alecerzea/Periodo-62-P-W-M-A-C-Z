@@ -4,8 +4,9 @@
 ## Carrera de Ingerieria en Ciencias de la Computacion
 ## Miguel Cervantes mcervantesz@est.edu.ec
 
-# Curso de Programacion y Plataformas Web
+# Cursando Programacion y Plataformas Web
 
 - HTML5
 - CSS2 Y CSS3
 - Javascript
+- Python
