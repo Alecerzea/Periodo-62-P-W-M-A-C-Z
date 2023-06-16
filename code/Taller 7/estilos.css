@@ -51,3 +51,18 @@ a:hover.menu {
 a:active.menu{
     background-color: black;
 }
+
+.item-form {
+    border: 1px dotted white;
+    margin: 5px;
+}
+
+.item-form-label {
+    display: block;
+    float: left;
+    width: 200px;
+}
+
+.footer {
+    grid-area: footer;
+}
