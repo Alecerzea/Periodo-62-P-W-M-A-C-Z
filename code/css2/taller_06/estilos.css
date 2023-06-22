@@ -9,3 +9,10 @@ img {
     width: 200px;
     height: 200px;
 }
+
+img.right {
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+
