@@ -1,5 +1,5 @@
-.posicion_relativa {
-    position: relative;
+.posicion_fixed {
+    position: fixed;
     top: 20px;
     left: 20px;
     background-color: lightsalmon;
