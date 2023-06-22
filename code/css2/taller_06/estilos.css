@@ -6,10 +6,10 @@ p {
     width: 200px;
 }
 
-img {
-    float: left;
-  }
-
 .limpiar {
     clear: both;
 }
+
+img {
+    float: left;
+  }
