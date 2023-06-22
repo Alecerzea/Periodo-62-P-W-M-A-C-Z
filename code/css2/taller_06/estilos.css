@@ -5,7 +5,7 @@ p.centrado {
     text-align: center;
   }
 img {
-    float: left;
+    float: right;
 }
 img.mediana{
     width: 50px;
