@@ -3,13 +3,14 @@
     <head>
         <title>Mostrar imágenes con botones</title>
       </head>
-      <body>
-        <div class="image-container">
-          <img id="Ryuki/Ryuga" src="img/343496320-256-k997134.jpg" alt="Imagen 1">
-          <button onclick="mostrarImagen('img/343496320-256-k997134.jpg', 'Ryuki/Ryuga')">Ryuki/Ryuga</button>
-        </div>
-        <div class="image-container">
-          <img id="Jack the Ripper" src="img/Jack_The_Ripper.jpg" alt="Imagen 2">
-          <button onclick="mostrarImagen('img/Jack_The_Ripper.jpg', 'image2')">Jack the Ripper</button>
-        </div>
+    </head>
+    <body>
+      <div id="image-container">
+        <img id="image" src="" alt="Blank Image">
+      </div>
+    
+      <div id="buttons-container">
+        <button onclick="loadImage('image1.jpg')">Imagen 1</button>
+        <button onclick="loadImage('image2.jpg')">Imagen 2</button>
+      </div>    
 </html>

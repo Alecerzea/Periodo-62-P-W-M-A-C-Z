@@ -1,4 +1,3 @@
-function mostrarImagen(url, imageId) {
-    var image = document.getElementById(imageId);
-    image.src = url;
+function loadImage(imageUrl) {
+    document.getElementById('image').src = imageUrl;
   }
