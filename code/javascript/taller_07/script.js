@@ -3,7 +3,9 @@ var es_presionado = false
 
 div_cajita.addEventListener('mousedown', function(valor){
     es_presionado = true
-
+    console.log()
+    console.log()
+    
     console.log(es_presionado)
 }, true)
 
