@@ -2,7 +2,7 @@
     margin: 0px;
 }
 
-.container32 {
+.container2 {
     display: grid;
     grid-template: 150px 1fr 50px / 200px 1fr;
     grid-template-areas: "header header" "left content" "footer footer";
