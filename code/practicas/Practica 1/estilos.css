@@ -13,14 +13,14 @@
 .menu {
     display: block;
     margin: 5px;
-    border: 1px solid rgb(red, green, blue);
+    border: 1px solid yellow;
     width: 150px;
 }
 
 .item {
-    background-color: dodgerblue;
+    background-color: yellow;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid yellow;
 }
 
 .header {
@@ -69,22 +69,26 @@ a:active.menu{
     grid-area: footer;
 }
 
-.container {  display: grid;
-    grid-template-columns: 1fr 0.7fr 1.3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  
+  
+  
+  .container {  display: grid;
+    grid-template-columns: 1fr 0.7fr 1.3fr 1fr 1fr 1fr 1fr 0.9fr 0.8fr 1.3fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      ". . item11 item12 item13 item14 item15 item16 ."
-      "item1 . . . . . . . item21"
-      "item2 . blanche . . . . . item22"
-      "item3 . . . . . . . item23"
-      "item4 . . . . . . . item24"
-      ". . item31 item32 item33 item34 item35 . ."
-      ". garitap . . . . . . .";
+      ". . item11 item12 item13 item14 item15 item16 . ."
+      "item1 . . . . . . . . item21"
+      "item2 . blanche item41 item42 item43 item44 . . item22"
+      "item3 . . . . . . . . item23"
+      "item4 . . . . . . . . item24"
+      ". . item31 item32 item33 item34 item35 . . ."
+      ". garitap . . . . . . . .";
   }
   
-  .item1 { grid-area: item1; background-color: greenyellow;}
+  .item1 { grid-area: item1; }
   
   .item2 { grid-area: item2; }
   
@@ -112,6 +116,20 @@ a:active.menu{
   
   .item16 { grid-area: item16; }
   
+  .item34 { grid-area: item34; }
+  
+  .item35 { grid-area: item35; }
+  
+  .garita { grid-area: garitap; }
+  
+  .item41 { grid-area: item41; }
+  
+  .item42 { grid-area: item42; }
+  
+  .item43 { grid-area: item43; }
+  
+  .item44 { grid-area: item44; }
+  
   .item21 { grid-area: item21; }
   
   .item22 { grid-area: item22; }
@@ -119,9 +137,3 @@ a:active.menu{
   .item23 { grid-area: item23; }
   
   .item24 { grid-area: item24; }
-  
-  .item34 { grid-area: item34; }
-  
-  .item35 { grid-area: item35; }
-  
-  .garitap { grid-area: garita; }
