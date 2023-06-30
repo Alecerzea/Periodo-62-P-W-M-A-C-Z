@@ -2,7 +2,7 @@
     margin: 0px;
 }
 
-.container31 {
+.container32 {
     display: grid;
     grid-template: 150px 1fr 50px / 200px 1fr;
     grid-template-areas: "header header" "left content" "footer footer";
@@ -84,7 +84,7 @@ a:active.menu{
       ". garitap . . . . . . .";
   }
   
-  .item1 { grid-area: item1; }
+  .item1 { grid-area: item1; background-color: greenyellow;}
   
   .item2 { grid-area: item2; }
   
