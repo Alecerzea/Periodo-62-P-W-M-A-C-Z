@@ -2,7 +2,7 @@
     margin: 0px;
 }
 
-.container {
+.container31 {
     display: grid;
     grid-template: 150px 1fr 50px / 200px 1fr;
     grid-template-areas: "header header" "left content" "footer footer";
@@ -68,3 +68,60 @@ a:active.menu{
 .footer {
     grid-area: footer;
 }
+
+.container {  display: grid;
+    grid-template-columns: 1fr 0.7fr 1.3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . item11 item12 item13 item14 item15 item16 ."
+      "item1 . . . . . . . item21"
+      "item2 . blanche . . . . . item22"
+      "item3 . . . . . . . item23"
+      "item4 . . . . . . . item24"
+      ". . item31 item32 item33 item34 item35 . ."
+      ". garitap . . . . . . .";
+  }
+  
+  .item1 { grid-area: item1; }
+  
+  .item2 { grid-area: item2; }
+  
+  .item3 { grid-area: item3; }
+  
+  .item4 { grid-area: item4; }
+  
+  .item11 { grid-area: item11; }
+  
+  .item12 { grid-area: item12; }
+  
+  .item13 { grid-area: item13; }
+  
+  .item14 { grid-area: item14; }
+  
+  .blanche { grid-area: blanche; }
+  
+  .item31 { grid-area: item31; }
+  
+  .item32 { grid-area: item32; }
+  
+  .item33 { grid-area: item33; }
+  
+  .item15 { grid-area: item15; }
+  
+  .item16 { grid-area: item16; }
+  
+  .item21 { grid-area: item21; }
+  
+  .item22 { grid-area: item22; }
+  
+  .item23 { grid-area: item23; }
+  
+  .item24 { grid-area: item24; }
+  
+  .item34 { grid-area: item34; }
+  
+  .item35 { grid-area: item35; }
+  
+  .garitap { grid-area: garitap; }
