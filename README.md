@@ -2,7 +2,7 @@
 
 # Universidad Politecnica Salesiana
 ## Carrera de Ingerieria en Ciencias de la Computacion
-## Miguel Cervantes miguelcervanreszea@hotmail.com
+## Miguel Cervantes miguelcervanreszea@hotmail.com, mcervantesz@est.ups.edu.ec
 
 # Cursando Programacion y Plataformas Web
 
