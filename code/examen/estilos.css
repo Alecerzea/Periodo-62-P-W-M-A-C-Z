@@ -4,7 +4,7 @@ body {
 
 .header {
   margin-top: 50px;
-  background-color: rgb(160, 160, 21);
+  background-color: rgb(241, 241, 24);
   padding: 10px;
 }
 
@@ -15,7 +15,7 @@ body {
 
 .buttons-container {
   margin-top: 100px;
-  background-color: rgb(158, 158, 21);
+  background-color: rgb(231, 231, 25);
   padding: 20px;
 }
 
@@ -49,7 +49,7 @@ body {
 
 .form-container {
   margin-top: 50px;
-  background-color: rgb(129, 129, 5);
+  background-color: rgb(236, 236, 21);
   padding: 20px;
 }
 
