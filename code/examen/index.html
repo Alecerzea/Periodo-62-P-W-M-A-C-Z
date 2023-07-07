@@ -1,45 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CSS3 - Grids</title>
+        <title>Examen de MCervantes</title>
         <link rel="stylesheet" type="text/css" href="estilos.css" />
     </head>
     <body>
-        <section class="container">
-            <div class="item header"></div>
-            <div class="item left">
-                <a class="menu" href="#">Libro</a>
-                <a class="menu" href="#">Editorial</a>
-            </div>
-            <div class="item content">
-                <div class="item-form">
-                    <label class="item-form-label">ISBN:</label>
-                    <input type="text" value="" />    
-                </div>
-                <div class="item-form">
-                    <label class="item-form-label">Titulo:</label>
-                    <input type="text" value="" />    
-                </div>
-                <div class="item-form">
-                    <label class="item-form-label">Subtitulo:</label>
-                    <input type="text" value="" />                        
-                </div>  
-                <div class="item-form">
-                    <label class="item-form-label">Año de publicacion:</label>
-                    <input type="text" value="" />                      
-                </div>
-                <div class="header">
-                    <button class="button">Libro</button>
-                    <button class="button">Editorial</button>
-                  </div>
-                 
-                  <div class="title">
-                    Ingreso de libro
-                  </div>
-                 
-                  <div class="buttons-container">
-                    <button class="button cancel">Cancelar</button>
-                    <button class="button continue">Continuar</button>
-                  </div>
-                </body>
+        <div class="header">
+          <button class="button book-button" onclick="showBookForm()">Libro</button>
+          <button class="button editorial-button" onclick="showEditorialForm()">Editorial</button>
+        </div>
+       
+        <div class="title">
+          Ingreso de libro
+        </div>
+       
+        <div id="form-container"></div>
+       
+        <div class="buttons-container">
+          <button class="button cancel">Cancelar</button>
+          <button class="button continue">Continuar</button>
+        </div>
+    </body>      
 </html>

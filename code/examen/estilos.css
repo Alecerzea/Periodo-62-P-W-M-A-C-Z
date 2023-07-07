@@ -1,34 +1,60 @@
-.body {
-    text-align: center;
-  }
- 
-  .header {
-    margin-top: 50px;
-  }
- 
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-  }
- 
-  .buttons-container {
-    margin-top: 100px;
-  }
- 
-  .button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 0 10px;
-  }
- 
-  .cancelar {
-    background-color: red;
-    color: white;
-  }
- 
-  .continuar {
-    background-color: green;
-    color: white;
-  }
+body {
+  text-align: center;
+}
+
+.header {
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.buttons-container {
+  margin-top: 100px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.cancel {
+  background-color: red;
+  color: white;
+}
+
+.continue {
+  background-color: green;
+  color: white;
+}
+
+.book-button {
+  background-color: darkgoldenrod;
+  color: white;
+}
+
+.editorial-button {
+  background-color: darkgoldenrod;
+  color: white;
+}
+
+.form-container {
+  margin-top: 50px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form-input {
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
