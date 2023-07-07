@@ -4,6 +4,8 @@ body {
 
 .header {
   margin-top: 50px;
+  background-color: yellow;
+  padding: 10px;
 }
 
 .title {
@@ -13,6 +15,8 @@ body {
 
 .buttons-container {
   margin-top: 100px;
+  background-color: yellow;
+  padding: 20px;
 }
 
 .button {
@@ -45,6 +49,8 @@ body {
 
 .form-container {
   margin-top: 50px;
+  background-color: lightyellow;
+  padding: 20px;
 }
 
 .form-label {
