@@ -15,41 +15,29 @@
         </div>
        
         <section class="container">
-          <div class="item content">
-              <div class="item-form">
-                  <label class="item-form-label">ISBN:</label>
-                  <input type="text" value="" />    
-              </div>
-              <div class="item-form">
-                  <label class="item-form-label">Titulo:</label>
-                  <input type="text" value="" />    
-              </div>
-              <div class="item-form">
-                  <label class="item-form-label">Subtitulo:</label>
-                  <input type="text" value="" />                        
-              </div>
-              <div class="item-form">
-                <label class="item-form-label">Año de publicacion:</label>
-                <input type="text" value="" />                        
-            </div>
+          <div class="form-container">
+            <label class="form-label" for="ISBN">ISBN:</label>
+            <input class="form-input" type="text" id="ISBN" name="ISBN">
+            <label class="form-label" for="titulo">Titulo:</label>
+            <input class="form-input" type="text" id="Titulo" name="Titulo">
+            <label class="form-label" for="subtitulo">Subtítulo:</label>
+            <input class="form-input" type="text" id="subtitulo" name="subtitulo">
+            <label class="form-label" for="ano">Año de publicación:</label>
+            <input class="form-input" type="text" id="ano" name="ano">
+          </div>
             <div class="title">
               Ingreso de la editorial del libro
             </div>
            
             <section class="container">
-              <div class="item content">
-                  <div class="item-form">
-                      <label class="item-form-label">Titulo:</label>
-                      <input type="text" value="" />    
-                  </div>
-                  <div class="item-form">
-                      <label class="item-form-label">Nombre:</label>
-                      <input type="text" value="" />                        
-                  </div>
-                  <div class="item-form">
-                    <label class="item-form-label">Domicilio:</label>
-                    <input type="text" value="" />                        
-                </div>
+              <div class="form-container">
+                <label class="form-label" for="editorial-titulo">Título:</label>
+                <input class="form-input" type="text" id="editorial-titulo" name="editorial-titulo">
+                <label class="form-label" for="nombre">Nombre:</label>
+                <input class="form-input" type="text" id="nombre" name="nombre">
+                <label class="form-label" for="domicilio">Domicilio:</label>
+                <input class="form-input" type="text" id="domicilio" name="domicilio">
+              </div>
         <div class="buttons-container">
           <button class="button cancel">Cancelar</button>
           <button class="button continue">Continuar</button>
