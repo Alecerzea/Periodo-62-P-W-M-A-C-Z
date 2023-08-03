@@ -14,3 +14,5 @@ const imprimir_articulo = (objeto) => {
 for (let elemento of articulos){
     imprimir_articulo(elemento)
 }
+
+console.log('==============USO DEL FOREACH==========')
