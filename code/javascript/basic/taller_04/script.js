@@ -18,3 +18,6 @@ function carro(marca, modelo, anio){
         console.log('Auto:${this.marca}-${this.modelo},Año:${this.anio}')
     }
 }
+
+lat mi_auto = new carro('Ford', 'Focus', 2023)
+mi_auto.detalle_auto()
