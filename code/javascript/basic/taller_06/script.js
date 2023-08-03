@@ -6,3 +6,11 @@ let articulos = [
     { nombre: 'Laptop Lenovo', modelo: 'Core i3 1ma, 1tb, 12gb, touch, 15 pulg', costo:525.67 },
     { nombre: 'Laptop Dell', modelo: 'Core i7 11va, 512gb ssd, 16gb, tec iluminado', costo: 1067.67 }
 ]
+
+const imprimir_articulo = (objeto) => {
+    console.log ('$(objeto.nombre}-${objeto.modelo}, valor: ${objeto.costo}')
+}
+
+for (let elemento of articulos){
+    imprimir_articulo(elemento)
+}
