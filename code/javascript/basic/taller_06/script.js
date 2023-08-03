@@ -15,4 +15,6 @@ for (let elemento of articulos){
     imprimir_articulo(elemento)
 }
 
-console.log('==============USO DEL FOREACH==========')
+articulos.forEach(
+    imprimir_articulo()
+)
