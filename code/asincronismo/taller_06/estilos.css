@@ -1,0 +1,18 @@
+body {
+    background-color: seashell;
+}
+
+h1 {
+    color: brown;
+}
+
+#contenedor {
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+}
+
+#contenedor h1 {
+    width: auto;
+    text-align: center;
+}
