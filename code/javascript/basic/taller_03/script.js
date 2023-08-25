@@ -19,3 +19,5 @@ TEXTO_ALTERNATIVO = 'otro gato...'
 console.log(texto)
 
 //console.log(texto2)
+
+
