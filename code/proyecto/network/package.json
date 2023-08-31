@@ -1,0 +1,11 @@
+{
+  "name": "periodo-62-p-w-m-a-c-z",
+  "version": "1.0.0",
+  "description": "- HTML5\r - CSS2 Y CSS3\r - Javascript\r - Python",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alecerzea",
+  "license": "GPL-3.0"
+}

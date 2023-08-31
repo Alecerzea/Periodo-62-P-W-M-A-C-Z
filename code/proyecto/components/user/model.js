@@ -1,11 +1,12 @@
-const moongose = require('mongoose')
-const Schema = moongose.Schema
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
 
-const usuario_Schema = new Schema({
+const usuario_schema = new Schema({
+    usuario: String,
+    clave: String,
     nombre: String,
     apellido: String,
-})
+}) 
 
-const model = moongose.model('Usuario', usuario_Schema)
+const model = mongoose.model('Usuario', usuario_schema)
 module.exports = model
-
