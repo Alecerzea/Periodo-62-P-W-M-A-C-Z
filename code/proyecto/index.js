@@ -17,4 +17,3 @@ routes( app )
 
 app.listen( config.PORT )
 console.log(`La aplicacion se encuentra arriba en http://localhost:${config.PORT}`)
-
