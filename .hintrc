@@ -3,13 +3,20 @@
     "development"
   ],
   "hints": {
-    "meta-viewport": "off",
     "axe/text-alternatives": [
       "default",
       {
         "document-title": "off"
       }
     ],
-    "axe/language": "off"
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
+      }
+    ],
+    "meta-charset-utf-8": "off",
+    "button-type": "off",
+    "meta-viewport": "off"
   }
 }
