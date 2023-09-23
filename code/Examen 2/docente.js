@@ -1,4 +1,3 @@
-// docente.js
 const mongoose = require('mongoose');
 
 const docenteSchema = new mongoose.Schema({

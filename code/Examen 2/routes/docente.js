@@ -1,9 +1,7 @@
-// routes/docente.js
 const express = require('express');
 const router = express.Router();
-const Docente = require('../models/docente');
+const Docente = require('../docente');
 
-// Ruta para obtener todos los docentes
 router.get('/', async (req, res) => {
   try {
     const docentes = await Docente.find();
@@ -13,7 +11,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Ruta para crear un nuevo docente
+
 router.post('/', async (req, res) => {
   const docente = new Docente(req.body);
 
@@ -25,6 +23,6 @@ router.post('/', async (req, res) => {
   }
 });
 
-// Más rutas para actualizar y eliminar docentes
+
 
 module.exports = router;

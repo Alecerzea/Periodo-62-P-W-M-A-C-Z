@@ -1,7 +1,6 @@
-// db.js
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/tu_basededatos', {
+mongoose.connect('mongodb+srv://alecerzea:miguelalejandro@cluster1.y8leh.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
