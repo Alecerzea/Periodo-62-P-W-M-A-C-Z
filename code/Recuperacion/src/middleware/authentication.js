@@ -1,14 +1,13 @@
-
 const passport = require('passport');
 const passportJWT = require('passport-jwt');
 const ExtractJWT = passportJWT.ExtractJwt;
 const JWTStrategy = passportJWT.Strategy;
 
-const User = require('../models/models'); // Suponiendo que tienes un modelo de usuario con roles
+const User = require('../models/models'); 
 
 const jwtOptions = {
   jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
-  secretOrKey: 'miguelalejandro', // Debes guardar esta clave en una variable de entorno
+  secretOrKey: 'miguelalejandro',
 };
 
 const strategy = new JWTStrategy(jwtOptions, async (jwt_payload, done) => {
@@ -26,4 +25,4 @@ const strategy = new JWTStrategy(jwtOptions, async (jwt_payload, done) => {
 
 passport.use(strategy);
 
-module.exports = passport.authenticate('jwt', { session: false });
+module.exports = passport.authenticate('jwt', { session: false }, express);
