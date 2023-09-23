@@ -13,7 +13,7 @@ mongoose.connect('mongodb+srv://alecerzea:miguelalejandro@cluster1.y8leh.mongodb
 
 app.use(passport.initialize());
 
-app.use('/src/routes/routes', docenteRoutes);
+app.use('/src/routes/routes', routes);
 
 app.listen(PORT, () => {
   console.log(`Servidor escuchando en el puerto ${PORT}`);
