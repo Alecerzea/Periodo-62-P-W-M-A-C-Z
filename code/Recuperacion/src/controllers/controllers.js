@@ -38,5 +38,10 @@ router.put("/:id", async (req, res) => {
 router.delete("/:id", async (req, res) => {
   const id = req.params.id;
   await Teacher.findByIdAndDelete(id);
-  res.json({ message: "Docente eliminado correctamente" });
+  const teacher = await Teacher.findById(id);
+  if (teacher) {
+    res.status(404).json({ message: "Docente no encontrado" });
+  } else {
+    res.status(204).send();
+  }
 });
