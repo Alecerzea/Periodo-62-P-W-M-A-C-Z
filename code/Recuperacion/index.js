@@ -13,7 +13,6 @@ mongoose.connect('mongodb+srv://alecerzea:miguelalejandro@cluster1.y8leh.mongodb
 
 app.use(passport.initialize());
 
-// Rutas de docentes
 app.use('/src/routes/routes', docenteRoutes);
 
 app.listen(PORT, () => {
