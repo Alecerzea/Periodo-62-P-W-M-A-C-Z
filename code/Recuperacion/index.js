@@ -1,17 +1,21 @@
-import db from './db'
-import config from './config'
-import express from 'express'
-import docente from './network/routes'
-import { createRoles } from './components/lib/initialSetup'
+const express = require('express');
+const mongoose = require('mongoose');
+const passport = require('passport');
+const docenteRoutes = require('./src/routes/routes');
 
-db( config.DB_URL )
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-var app = express()
-createRoles()
+mongoose.connect('mongodb+srv://alecerzea:miguelalejandro@cluster1.y8leh.mongodb.net/?retryWrites=true&w=majority', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
-app.use(express.json())
+app.use(passport.initialize());
 
-app.use('/', docente)
+// Rutas de docentes
+app.use('/src/routes/routes', docenteRoutes);
 
-app.listen( config.PORT )
-console.log(`La aplicacion se encuentra arriba en http://localhost:${config.PORT}`)
+app.listen(PORT, () => {
+  console.log(`Servidor escuchando en el puerto ${PORT}`);
+});
