@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { authenticate, authorize } = require('./middleware');
-const Teacher = require('./models');
+const { authenticate, authorize } = require('./middleware/authentication.js');
+const Teacher = require('./models/models.js');
 
 router.get('/teachers', authenticate, authorize(['admin', 'teacher']), async (req, res) => {
   const teachers = await Teacher.find({});

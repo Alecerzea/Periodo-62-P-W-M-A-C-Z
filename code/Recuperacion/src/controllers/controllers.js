@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Teacher = require("./../models/models");
+const Teacher = require("./../models/models.js");
 
 
 router.get("/", async (req, res) => {
