@@ -1,40 +1,28 @@
 const express = require('express');
 const router = express.Router();
-const controller = require('../controllers/controllers');
+const { authenticate, authorize } = require('./middleware');
+const Teacher = require('./models');
 
+router.get('/teachers', authenticate, authorize(['admin', 'teacher']), async (req, res) => {
+  const teachers = await Teacher.find({});
+  res.send(teachers);
+});
 
-router.get('/', controller.getAllDocentes);
+router.post('/teachers', authenticate, authorize(['admin']), async (req, res) => {
+  const teacher = new Teacher(req.body);
+  await teacher.save();
+  res.send(teacher);
+});
 
-exports.getAllDocentes = async (req, res) => {
-  const docentes = await Docente.find();
-  res.status(200).json(docentes);
-};
+router.put('/teachers/:id', authenticate, authorize(['admin']), async (req, res) => {
+  const teacher = await Teacher.findByIdAndUpdate(req.params.id, req.body);
+  res.send(teacher);
+});
 
-router.get('/:id', controller.getDocente);
-exports.getDocente = async (req, res) => {
-  const docente = await Docente.findById(req.params.id);
-  res.status(200).json(docente);
-};
-
-router.post('/', controller.createDocente);
-exports.createDocente = async (req, res) => {
-  const newDocente = new Docente(req.body);
-  const docente = await newDocente.save();
-  res.status(201).json(docente);
-};
-
-router.put('/:id', controller.updateDocente);
-exports.updateDocente = async (req, res) => {
-  const updatedDocente = await Docente.findByIdAndUpdate(req.params.id, req.body, { new: true });
-  res.status(200).json(updatedDocente);
-};
-
-router.delete('/:id', controller.deleteDocente);
-exports.deleteDocente = async (req, res) => {
-  await Docente.findByIdAndDelete(req.params.id);
-  res.status(204).send();
-};
+router.delete('/teachers/:id', authenticate, authorize(['admin']), async (req, res) => {
+  await Teacher.findByIdAndDelete(req.params.id);
+  res.send({ message: 'Teacher deleted' });
+});
 
 module.exports = router;
 
-const Docente = require('../models/models');

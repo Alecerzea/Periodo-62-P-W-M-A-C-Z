@@ -1,11 +1,23 @@
 const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
 
-const docenteSchema = new mongoose.Schema({
-  cedula: String,
-  nombres: String,
-  apellidos: String,
-  usuario: String,
-  clave: String
+const TeacherSchema = new mongoose.Schema({
+  id: String,
+  firstName: String,
+  lastName: String,
+  username: String,
+  password: String,
+  role: { type: String, default: 'teacher' },
 });
 
-module.exports = mongoose.model('Docente', docenteSchema);
+TeacherSchema.pre('save', function (next) {
+  if (!this.isModified('password')) return next();
+  this.password = bcrypt.hashSync(this.password, 10);
+  next();
+});
+
+TeacherSchema.methods.comparePassword = function (password) {
+  return bcrypt.compareSync(password, this.password);
+};
+
+module.exports = mongoose.model('Teacher', TeacherSchema);

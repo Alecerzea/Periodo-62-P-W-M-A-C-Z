@@ -1,28 +1,26 @@
-const passport = require('passport');
-const passportJWT = require('passport-jwt');
-const ExtractJWT = passportJWT.ExtractJwt;
-const JWTStrategy = passportJWT.Strategy;
+const jwt = require('jsonwebtoken');
+const Teacher = require('./models');
 
-const User = require('../models/models'); 
-
-const jwtOptions = {
-  jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
-  secretOrKey: 'miguelalejandro',
+const authenticate = async (req, res, next) => {
+  const token = req.headers['authorization'];
+  try {
+    const decoded = jwt.verify(token, 'YOUR_SECRET_KEY');
+    const user = await Teacher.findOne({ id: decoded.id });
+    if (!user) throw new Error('No user found.');
+    req.user = user;
+    next();
+  } catch (error) {
+    res.status(401).send({ message: 'Unauthorized' });
+  }
 };
 
-const strategy = new JWTStrategy(jwtOptions, async (jwt_payload, done) => {
-  try {
-    const user = await User.findById(jwt_payload.id);
-    if (user) {
-      return done(null, user);
-    } else {
-      return done(null, false);
-    }
-  } catch (error) {
-    return done(error, false);
+const authorize = (roles) => (req, res, next) => {
+  if (roles.includes(req.user.role)) {
+    next();
+  } else {
+    res.status(403).send({ message: 'Forbidden' });
   }
-});
+};
 
-passport.use(strategy);
+module.exports = { authenticate, authorize };
 
-module.exports = passport.authenticate('jwt', { session: false });
