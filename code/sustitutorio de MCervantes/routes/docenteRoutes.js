@@ -5,4 +5,4 @@ const router = express.Router();
 router.get('/',docenteController.getDocentes);
 router.post('/',docenteController.createDocentes);
 
-modules.exports = router;
+modules.exports=router;
