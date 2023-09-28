@@ -1,0 +1,9 @@
+{
+  "name": "sustitutorio-de-mcervantesz",
+  "version": "1.0.0",
+  "description": "- HTML5\r - CSS2 Y CSS3\r - Javascript\r - Python",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
