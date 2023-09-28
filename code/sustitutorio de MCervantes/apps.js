@@ -6,7 +6,7 @@ const tituloRoutes = require('./routes/tituloRoutes');
 
 const app = express();
 
-mongoose.connect('mongodb://<usuario>:<contraseña>@cluster0.mongodb.net/<nombre-de-tu-base-de-datos>', {
+mongoose.connect('mongodb+srv://alecerzea:miguelalejandro@cluster1.y8leh.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
